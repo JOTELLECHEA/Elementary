@@ -19,3 +19,10 @@ img {
 h1, p {
     color: #52B788; 
 }
+
+.gif {
+    text-align: center;
+    overflow: visible;
+    position: relative;
+    z-index: 1
+}
