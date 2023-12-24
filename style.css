@@ -1,28 +1,103 @@
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 20px;
-    display: flex;
-    align-items: center;
-    background-color: #000000;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0; /* Remove default margin */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #000000;
+  color: #52b788;
 }
-
-img {
-    width: 50%; /* Adjust the width as needed */
-    margin-right: 20px; /* Add some margin to separate the image from other content */
-}
-
 .content {
-    flex-grow: 1;
+  text-align: center;
 }
 
-h1, p {
-    color: #52B788; 
+.Title {
+  background-color: black;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .gif {
-    text-align: center;
-    overflow: visible;
-    position: relative;
-    z-index: 1
+  text-align: center;
+  margin-top: 20px;
+}
+
+h1,
+p {
+  color: #52b788;
+}
+
+h1 {
+  margin-top: 40px;
+}
+
+h2 {
+  color: #52b788;
+}
+a {
+  color: #52b788; /* Default color for links */
+  text-decoration: none; /* Remove default underline */
+}
+a:hover {
+  text-decoration: underline;
+}
+.footer {
+  background-color: #52b788;
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+  position: fixed; /* Fixed position at the bottom of the page */
+  bottom: 0;
+}
+
+.footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.footer a:hover {
+  color: black;
+  text-decoration: underline;
+}
+.footer li span {
+  color: black; /* Set the color to white or any other color that contrasts with the background */
+  font-weight: bold; /* Optional: Make the text bold for emphasis */
+}
+.link {
+  color: white;
+}
+.logo-container {
+  position: absolute;
+  top: 10px; /* Adjust the top position as needed */
+  left: 10px; /* Adjust the right position as needed */
+}
+
+.logo {
+  width: 100px; /* Adjust the width of your logo */
+  height: auto; /* Maintain aspect ratio */
+}
+.download-title {
+  margin-bottom: 50px; /* Adjust the margin as needed */
+}
+.contact-title {
+  margin-bottom: 100px; /* Adjust the margin as needed */
+}
+.download-subtitle {
+  margin-bottom: 100px; /* Adjust the margin as needed */
 }
