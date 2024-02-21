@@ -191,3 +191,22 @@ body {
 .comingsoon {
   margin-top: 50px;
 }
+
+@media (max-width: 768px) {
+  .header {
+    padding: 10px;
+  }
+  
+  .header-text {
+    font-size: 16px;
+  }
+
+  .button-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-button {
+    margin: 5px 0;
+  }
+}
