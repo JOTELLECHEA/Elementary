@@ -1,103 +1,193 @@
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 0; /* Remove default margin */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background-color: #000000;
-  color: #52b788;
-}
-.content {
-  text-align: center;
-}
-
-.Title {
-  background-color: black;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.gif {
-  text-align: center;
-  margin-top: 20px;
-}
-
-h1,
-p {
-  color: #52b788;
-}
-
-h1 {
-  margin-top: 40px;
-}
-
-h2 {
-  color: #52b788;
-}
-a {
-  color: #52b788; /* Default color for links */
-  text-decoration: none; /* Remove default underline */
-}
-a:hover {
-  text-decoration: underline;
-}
-.footer {
-  background-color: #52b788;
-  padding: 10px 0;
-  width: 100%;
-  text-align: center;
-  position: fixed; /* Fixed position at the bottom of the page */
-  bottom: 0;
-}
-
-.footer ul {
-  list-style: none;
   margin: 0;
   padding: 0;
+  background-color: #52b788;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
-.footer li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-.footer a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-.footer a:hover {
-  color: black;
-  text-decoration: underline;
-}
-.footer li span {
-  color: black; /* Set the color to white or any other color that contrasts with the background */
-  font-weight: bold; /* Optional: Make the text bold for emphasis */
-}
-.link {
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(82, 183, 136, 0.6);
   color: white;
+  padding: 10px 20px;
 }
+
 .logo-container {
-  position: absolute;
-  top: 10px; /* Adjust the top position as needed */
-  left: 10px; /* Adjust the right position as needed */
+  display: flex;
+  align-items: center;
+}
+
+.logo-background {
+  background-color: #000;
+  border-radius: 10px;
+  padding: 5px;
+  margin-right: 10px;
 }
 
 .logo {
-  width: 100px; /* Adjust the width of your logo */
-  height: auto; /* Maintain aspect ratio */
+  width: 40px;
+  height: auto;
 }
-.download-title {
-  margin-bottom: 50px; /* Adjust the margin as needed */
+
+.header-text {
+  font-size: 24px;
+  color: #000;
 }
-.contact-title {
-  margin-bottom: 100px; /* Adjust the margin as needed */
+
+.button-container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
 }
-.download-subtitle {
-  margin-bottom: 100px; /* Adjust the margin as needed */
+
+.header-button {
+  margin-left: 25px;
+  margin-right: 25px;
+  padding: 8px 16px;
+  background-color: #52b788;
+  color: black;
+  text-decoration: none;
+  border: none;
+  border-radius: 55px;
+}
+
+.header-button:hover {
+  background-color: #40916c;
+}
+
+.big-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the container horizontally */
+  text-align: left; /* Align text to the left */
+  margin-top: 150px; /* Add margin space from the top */
+}
+
+.big-text {
+  font-size: 72px; /* Adjust font size as needed */
+  color: #333; /* Adjust text color */
+  margin: 0; /* Remove default margin */
+}
+.mid-text {
+  font-size: 36px; /* Adjust font size as needed */
+  color: #333; /* Adjust text color */
+  margin: 0; /* Remove default margin */
+}
+
+.small-text {
+  font-size: 24px; /* Adjust font size as needed */
+  color: #333; /* Adjust text color */
+  margin: 0; /* Remove default margin */
+}
+.rounded-image {
+  border-radius: 20px; /* Adjust the border radius as needed */
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  display: inline;
+  margin-right: 20px; /* Adjust spacing between links */
+  color: white;
+}
+
+.footer-links li:last-child {
+  margin-right: 0; /* Remove margin from the last link */
+}
+
+.footer-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links li a:hover {
+  text-decoration: underline;
+}
+
+.text-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* Adjust the number of columns as needed */
+  gap: 20px; /* Adjust the gap between grid items */
+  margin-top: 10px; /* Add margin space from the GIF */
+  margin-bottom: 150px;
+  text-align: center;
+  color: white;
+}
+
+.grid-item {
+  background-color: #2d6a4f; /* Background color of grid items */
+  padding: 20px; /* Adjust padding as needed */
+  border-radius: 20px; /* Add rounded corners to grid items */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 1); /* Add shadow for visual separation */
+}
+
+.grid-item:hover {
+  transform: translateY(-5px); /* Add a slight lift effect on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Increase shadow size on hover */
+}
+/* scrollbar */
+/* Style the scrollbar track */
+::-webkit-scrollbar {
+  width: 12px; /* Set the width of the scrollbar */
+}
+
+/* Style the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background-color: #797979; /* Set the color of the thumb */
+  border-radius: 6px; /* Add rounded corners to the thumb */
+}
+
+/* Style the scrollbar buttons (arrows) */
+::-webkit-scrollbar-button {
+  background-color: #2e2e2e; /* Set the color of the buttons */
+}
+
+.center-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Align items vertically */
+  margin-top: 150px;
+  margin-bottom: 200px;
+}
+
+.privacy-policy-container {
+  max-width: 800px; /* Set maximum width */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 0 20px; /* Add left and right padding */
+  margin-top: 100px;
+}
+.apple-button img {
+  height: 50px; /* Set a fixed height for the Apple button */
+}
+
+.google-button img {
+  width: 200px; /* Set a fixed width for the Google button */
+  height: auto; /* Allow the height to adjust based on the aspect ratio */
+}
+.comingsoon {
+  margin-top: 50px;
 }
